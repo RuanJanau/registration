@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -6,6 +7,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(245, 255, 255, 255),
       body: SizedBox(
         height: double.infinity,
         width: double.infinity,
@@ -38,7 +40,7 @@ class HomeView extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * .80,
                       height: 66.0,
                       child: ElevatedButton(
-                        onPressed: () => (() {}),
+                        onPressed: () => Modular.to.pushNamed('/login'),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xff48C2DC),
                           shape: const RoundedRectangleBorder(),
