@@ -13,7 +13,7 @@ class _LoginViewState extends State<LoginView> {
     return Scaffold(
       body: Stack(
         children: [
-         
+          Image.asset('assets/image/boll.png'),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children:  [
